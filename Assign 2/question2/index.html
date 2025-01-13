@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  #container{
+    background-color: lightblue;padding: 20px;
+    font-style: italic;
+    
+  }
+  h1{
+    color: darkblue;
+    text-align: center;
+   
+  }
+  ul{
+    margin: 10px;
+    font-size: 18px;
+  }
+  p{
+    font-style: italic;
+    color: gray;
+  }
+    </style>
+
+</head>
+<body>
+
+  <div id="container">
+    
+    <h1>Welcome to React.createElement</h1>
+    <ul>
+      <li>Learn React</li>
+      <li>Understand React.createElement</li>
+      <li>Build Amazing Apps</li>
+    </ul>
+
+    <p>This Page is built using React.createElement</p>
+  </div>
+  
+  
+    
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        const element = React.createElement("div",{className:"heading"},"This page is built using React.createElement")
+        
+        const reactRoot = ReactDOM.createRoot(document.getElementById("root"))
+
+        reactRoot.render(element)
+    </script>
+</body>
+</html>
