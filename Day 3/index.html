@@ -3,52 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-
+    <title>Document</title>
 </head>
 <body>
-    <!-- <h1>Hello World</h1>
-    <p>Welcome to React Day 1 Lecture</p> -->
-    <!-- create an element -->
-     <div id="root"></div>
-    <script>
-        // let h1 = document.createElement("h1");
-        // let p = document.createElement("p");
-        // //add the content
-        // h1.textContent= "Hello World";
-        // p.textContent = "welcome to React Day 1 Lecture";
-        // //append it to te body
-        // document.body.appendChild(h1);
-        // document.body.appendChild(p);
-        console.log(React)
-        // console.log(ReactDOM)
-        const element = React.createElement("h1",null,"Hello World");
-         const root = ReactDOM. createRoot(document.getElementById("root"));
-         react.render(element);
-    </script>
+    <div id="root"></div>
+    
+    <script type="text/babel" src="./App.js"></script>
+    <!-- React -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <!-- ReactDOM -->
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<!-- babel cdn links -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </body>
 </html>
-
-
-
-{/* <div id ="container">
-    <h1 id = "heading">Welcome Back</h1>
-    <p id= "subHeading">it is module 3</p>
-</div> */}
-{/* <ul>
-    <li>computers</li>
-    <li>mobiles</li>
-    <li>dektops</li>
-</ul> */}
-
-
-let element = React.createElement("div",{id:"container"},[
-    React.createElement("h1",{id:"heading",className:"mainHeading"},"Welcome Back"),
-    React.createElement('p',{id:"subHeading",style:{color:"red",fontSize:"32px"}},"it is module 3",
-
-    ),
-]);
-let rootElement = ReactDOM.createRoot(document.createElementbyId("root"));
-rootElement.render(element);
