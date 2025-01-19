@@ -1,31 +1,19 @@
-const Container =({title,children})=>{
-   console.log(title,children);
-}
-
-
-const title = (props)=>{
-  const {blog} = props;
+function Container({ children }) {
   return (
-  <div style = {{ backgroundColor:blog.isFeatured && "LightYellow"}}>
-      <h1>{blog.title}</h1>
-      <p>{blog.content}</p>
-      </div>
-  )
-};
-
-const App=()=>{
-  return <div style={{padding:"20px",fontFamily: 'Arial, sans-serif'}}>
-    <Container title ="heading">
-    <h1>Welcome to the container component</h1>
-    </Container>
-    <Container title ="paragraph">
-    <p>This is a reusable container component</p>
-    </Container>
-    <Container title ="Button">
-    <button style={{ padding: '10px 20px', backgroundColor: '#007BFF', color: '#fff', border: 'none', borderRadius: '5px', cursor: 'pointer' }}>
-          Click Me
-        </button>
-    </Container>
-  </div>
+    <div className="container">
+      {children}
+    </div>
+  );
 }
+
+function App() {
+  return (
+    <div className="App">
+      <Container>
+        <h1>This is a Heading</h1>
+        <p>This is a paragraph inside the container.</p>
+      </Container>
+    </div>
+  );
+};
 ReactDOM.createRoot(document.getElementById("root")).render(<App/>)
