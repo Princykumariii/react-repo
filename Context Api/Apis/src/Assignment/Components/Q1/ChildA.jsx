@@ -1,5 +1,5 @@
 import React from "react";
-import ChildB from "./ChildB"
+import ChildB from "../ChildB"
 function ChildA({name}){
     return(
         <div style={{textAlign:"center",padding:"20px"}}>
