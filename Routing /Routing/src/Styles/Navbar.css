@@ -1,0 +1,18 @@
+.navbar{
+    background-color: aquamarine;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    align-items: center;
+    border-radius: 5px;
+}
+.nav-link{
+    color: blue;
+    text-decoration: dashed;
+    font-weight: 500;
+    
+}
+nav a:hover {
+    color: red;
+  }
