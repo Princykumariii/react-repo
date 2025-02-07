@@ -1,10 +1,10 @@
 import React from "react";
-import InputFocus from "./Components/InputFocus";
-import ImageCarousel from "./Components/ImageCarousel";
-import FeedbackForm from "./Components/FeedbackForm";
-import Timer from "./Components/Timer";
-import Counter from "./Components/Counter";
-import Form from "./Components/Form";
+import InputFocus from "../../Day 1/Components/InputFocus";
+import ImageCarousel from "../../Day 1/Components/ImageCarousel";
+import FeedbackForm from "../../Day 1/Components/FeedbackForm";
+import Timer from "../../Day 1/Components/Timer";
+import Counter from "../../Day 1/Components/Counter";
+import Form from "../../Day 1/Components/Form";
 import PersistentInput from "./Assignment/PersistantInput";
 // import Demo from "./Pages/Demo";
 // import Todo from "./Pages/Todo";
