@@ -5,7 +5,8 @@ import FeedbackForm from "../../Day 1/Components/FeedbackForm";
 import Timer from "../../Day 1/Components/Timer";
 import Counter from "../../Day 1/Components/Counter";
 import Form from "../../Day 1/Components/Form";
-import PersistentInput from "./Assignment/PersistantInput";
+import PersistentInput from "../../Day 1/Components/Q1/PersistantInput";
+import TodoReducer from "./Assignment/Q2/TodoReducer"
 // import Demo from "./Pages/Demo";
 // import Todo from "./Pages/Todo";
 // import BreakPoints from "./Pages/BreakPoints";
@@ -14,7 +15,9 @@ import PersistentInput from "./Assignment/PersistantInput";
 const App = () => {
 	return (
 		<div>
-      <PersistentInput/>
+      <TodoReducer/>
+      
+      {/* <PersistentInput/> */}
 			{/* <InputFocus />  */}
 			{/* <ImageCarousel /> */}
 			{/* <FeedbackForm /> */}
